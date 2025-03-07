@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: inherit;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+
+  background-color: #C0EBF9;
+
+}
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100vw;
+  min-height: 100vh;
+
+
+
+  h1{
+    text-align: center;
+
+    
+    font-weight: 700;
+    font-size: 24px;
+
+    width: 100%;
+    max-width: 600px;
+
+    color: #467745;
+
+    @media (max-width: 640px) {
+      text-align: left;
+      padding: 0 20px;
+    }
+  }
+
+  input[name="tárgy"]{
+    font-weight: 500;
+    font-size: 16px;
+
+    width: 100%;
+    max-width: 600px;
+    min-height: 64px;
+
+    padding: 0 20px;
+
+    border: 0;
+
+    color: #467745;
+
+    @media (max-width: 640px) {
+      width: calc(100% - 40px);
+    }
+
+  }
+
+  input[name="tárgy"]::placeholder{
+    color: #46774593;
+  }
+
+  textarea{
+    font-weight: 400;
+    font-size: 16px;
+
+    width: 100%;
+    max-width: 600px;
+    min-height: 120px;
+
+    border: 0;
+
+    padding: 20px 20px;
+
+    color: #467745;
+
+    resize: none;
+
+    @media (max-width: 640px) {
+      width: calc(100% - 40px);
+    }
+  }
+
+  textarea::placeholder{
+    color: #4677458a;
+  }
+
+  .checkbox-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+
+    padding: 0 60px;
+
+    gap: 30px;
+    position: relative;
+
+    @media (max-width: 640px) {
+      padding: 0 20px;
+    }
+
+    input[type="checkbox"]{
+      width: 20px;
+      height: 20px;
+
+      border: 0;
+    }
+    
+    .elfogad{
+      font-weight: 400;
+      font-size: 16px;
+
+      position: absolute;
+      top: -2px;
+      left: 100px;
+
+      color: #467745;
+
+      @media (max-width: 640px) {
+        top: -10px;
+        left: 60px;
+      }
+    }
+
+    .hirlevel{
+      font-weight: 400;
+      font-size: 16px;
+      
+      
+      position: absolute;
+      top: 47px;
+      left: 100px;
+      
+      color: #467745;
+
+      @media (max-width: 640px) {
+        top: 47px;
+        left: 60px;
+      }
+    }
+  }
+
+  button{
+    font-weight: 700;
+    font-size: 21px;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+    height: 80px;
+
+    background-color: #467745;
+    color: #C0EBF9;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    border: 0;
+  }
+}
+
